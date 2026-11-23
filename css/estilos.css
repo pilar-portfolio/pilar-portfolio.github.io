@@ -2023,3 +2023,12 @@ body { font-family: var(--helvetica); color: var(--texto); background: var(--fon
   position: absolute; left: -45.9px; top: -32.3px; width: 362px; height: 648.5px;
   max-width: none; object-fit: fill;
 }
+
+/* ===== AJUSTES: etiqueta de etapa y menú del design system ===== */
+/* La etiqueta debajo del número ocupa 2 líneas parejas en vez de 3 */
+.etapa__numero { width: 136px; }
+.etapa__numero small { max-width: none; text-wrap: balance; line-height: 1.35; }
+/* El menú lateral toma el ancho del botón más largo: "Componentes" entra en la píldora */
+.ds { grid-template-columns: max-content 1fr; gap: 56px; }
+.ds__nav { align-items: flex-start; }
+.ds__boton { white-space: nowrap; padding: 8px 16px; }

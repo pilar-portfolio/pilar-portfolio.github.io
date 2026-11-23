@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neverland · Pilar Marino</title>
+  <meta name="description" content="Neverland: análisis y rediseño de una app de canje de puntos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Inter:opsz,wght@14..32,500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=8">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="encabezado">
+    <div class="encabezado__inner">
+      <a href="index.html#inicio" class="encabezado__logo" aria-label="Pilar Marino, inicio">PI.MARINO</a>
+      <nav class="encabezado__nav" aria-label="Principal">
+        <a class="navlink" href="proyectos.html">Proyectos</a>
+        <a class="navlink" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detalle">
+
+    <!-- ============ CABECERA DEL PROYECTO ============ -->
+    <div class="detalle__contenedor">
+      <a href="proyectos.html" class="boton-atras">
+        <img src="assets/tinta/icon-atras.svg" alt="" class="boton-atras__icono"> Atrás
+      </a>
+
+      <section class="detalle__hero">
+        <div class="detalle__imagen detalle__imagen--caja">
+          <img src="assets/neverland/hero.jpg" alt="App Neverland en un celular" style="height:116.43%;left:9.53%;top:-8.21%;width:80.94%">
+        </div>
+        <div class="detalle__info detalle__info--ancha">
+          <div class="detalle__textos">
+            <p class="detalle__anio">2026</p>
+            <h1 class="detalle__titulo">Neverland</h1>
+            <p class="detalle__tipo">Rediseño de app</p>
+            <p style="max-width:443px">Este proyecto consistió en el análisis y rediseño de una aplicación para Neverland. A partir de un análisis de usabilidad, se identificaron oportunidades de mejora y se optimizó la interfaz y la navegación para ofrecer una experiencia más intuitiva, clara y accesible.</p>
+          </div>
+          <ul class="detalle__tags">
+            <li class="tag">App</li>
+            <li class="tag">Celular</li>
+            <li class="tag">Canjeo de puntos</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ BARRA DE SUBSECCIONES ============ -->
+    <div class="subnav">
+      <div class="subnav__inner" role="tablist" aria-label="Etapas del proyecto">
+        <button class="subnav__boton" role="tab" id="tab-benchmark" aria-controls="benchmark" aria-selected="true">Benchmark</button>
+        <button class="subnav__boton" role="tab" id="tab-analisis" aria-controls="analisis" aria-selected="false">Análisis heurístico</button>
+        <button class="subnav__boton" role="tab" id="tab-flow" aria-controls="flow" aria-selected="false">Flows de interacción</button>
+        <button class="subnav__boton" role="tab" id="tab-diseno" aria-controls="diseno" aria-selected="false">Diseño de interfaz</button>
+        <button class="subnav__boton" role="tab" id="tab-uikit" aria-controls="uikit" aria-selected="false">UI Kit</button>
+      </div>
+    </div>
+
+    <!-- ============ 01 BENCHMARK ============ -->
+    <section class="etapa" id="benchmark" role="tabpanel" aria-labelledby="tab-benchmark">
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>01</span><small>Benchmark</small></div>
+        <p>Comparativa y análisis de aplicaciones similares, se analizaron 3 aplicaciones.</p>
+      </div>
+
+      <ul class="referentes">
+        <li class="referente">
+          <img src="assets/neverland/ypf.png" alt="Ícono de la App YPF" class="redondeado-chico">
+          <div>
+            <h3>App YPF</h3>
+            <p>Es una plataforma digital que permite a los usuarios gestionar pagos, acceder a beneficios y participar del programa de fidelización ServiClub.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/neverland/mcdonalds.png" alt="Ícono de la app de McDonald's" class="redondeado-chico">
+          <div>
+            <h3>McDonald's</h3>
+            <p>permite realizar pedidos desde el celular, acceder a promociones y participar en el programa de fidelización MyMcDonald’s Rewards.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/neverland/santander.png" alt="Ícono de Santander SuperClub" class="redondeado-chico">
+          <div>
+            <h3>Santander - SuperClub</h3>
+            <p>es el programa de beneficios y puntos del Banco Santander, accesible desde la app oficial del banco. Los usuarios acumulan puntos automáticamente a través del consumo con sus tarjetas.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="etapa__bloque">
+        <h2 class="etapa__subtitulo">Conclusiones</h2>
+        <p>El análisis de App YPF, Mc Donald´s y Santander Super Club permite identificar algunos patrones comunes en las aplicaciones que canjean puntos.</p>
+      </div>
+
+      <div class="tarjeta tarjeta--ancha">
+        <h3>Saldo está siempre visible y con jerarquía clara</h3>
+        <p>A partir del análisis comparativo entre YPF Serviclub, McDonald's y Santander SuperClub, se puede observar que las tres aplicaciones comparten una serie de patrones consolidados en el mercado para los sistemas de acumulación y canje de puntos.</p>
+        <p>Los ítems inaccesibles por saldo insuficiente se bloquean visualmente antes de que el usuario intente interactuar con ellos y el historial de movimientos es accesible en cualquier momento desde la navegación principal. Estos elementos funcionan como estándares implícitos que el usuario ya conoce y espera encontrar en cualquier app de este tipo.</p>
+      </div>
+    </section>
+
+    <!-- ============ 02 ANÁLISIS HEURÍSTICO ============ -->
+    <section class="etapa" id="analisis" role="tabpanel" aria-labelledby="tab-analisis" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>02</span><small>Flows</small></div>
+        <p>Análisis heurístico del flujo principal. Las pantallas analizadas incluyen la pantalla de inicio y todo el flujo de navegación asociado a estas pantallas.</p>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Análisis heurístico</h2>
+        <ul class="carrusel heuristicas">
+          <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>Se identificó que el saldo de puntos tenía baja jerarquía visual y que el título "Canjeá tus puntos" generaba una expectativa incorrecta sobre la operación. En el rediseño, el saldo aparece destacado en el header global y cada pantalla comunica claramente el estado de la acción en curso.</p></li>
+          <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>El título original describía la acción opuesta a lo que realmente ocurría en la pantalla. En el rediseño se utilizan términos familiares y precisos que reflejan exactamente lo que el usuario está haciendo.</p></li>
+          <li class="heuristica"><h3># 3 Control y libertad del usuario</h3><p>Se detectó que el botón para cerrar la ventana emergente era demasiado pequeño y que no existía forma de deshacer una acción una vez ejecutada. En el rediseño se amplió el área táctil de los controles y se incorporó una pantalla de confirmación previa al canje.</p></li>
+          <li class="heuristica"><h3>#4 Consistencia y estándares</h3><p>Los botones "Historial" y "Volver" tenían el mismo tratamiento visual, sugiriendo que realizaban acciones de igual importancia. En el rediseño se diferencia el botón primario (relleno naranja) del secundario (solo borde), estableciendo una jerarquía visual clara.</p></li>
+          <li class="heuristica"><h3>#5 Prevención de errores</h3><p>Todos los ítems del catálogo se veían igual independientemente del saldo disponible, lo que permitía que el usuario llegara hasta la ventana de confirmación para recién enterarse de que no podía completar el canje. En el rediseño los ítems inaccesibles aparecen bloqueados visualmente desde el catálogo.</p></li>
+          <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>El título incorrecto de la pantalla y la ausencia del saldo global obligaban al usuario a razonar sobre qué estaba haciendo y recordar cuántos puntos tenía. En el rediseño la información clave está siempre visible y cada pantalla se explica por sí misma sin exigir memoria al usuario.</p></li>
+          <li class="heuristica"><h3>#7 Flexibilidad y eficiencia de uso</h3><p>El historial solo era accesible desde la pantalla de éxito post-acreditación, obligando al usuario a completar una acción para poder consultar sus movimientos. En el rediseño el historial tiene acceso directo desde la barra de navegación inferior, disponible en cualquier momento.</p></li>
+          <li class="heuristica"><h3>#8 Estética y diseño minimalista</h3><p>Las pantallas de la interfaz original presentaban una jerarquía visual ordenada con íconos y nombres de actividad, lo cual se mantuvo como punto de partida positivo. En el rediseño se reforzó esta claridad eliminando información redundante y priorizando los datos más relevantes para el usuario.</p></li>
+          <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>El mensaje de error original era específico y comprensible, lo que se tomó como una fortaleza a mantener. En el rediseño se amplió este criterio a todos los estados de error de la app.</p></li>
+          <li class="heuristica"><h3>#10 Ayuda y documentación</h3><p>No existía ningún texto de ayuda que explicara al usuario cómo funciona el sistema de puntos, cuánto valen o dónde se pueden usar. En el rediseño se incorporó un onboarding de 3 slides que introduce el sistema al usuario la primera vez que ingresa, reduciendo la curva de aprendizaje desde el inicio.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 03 FLOWS ============ -->
+    <section class="etapa" id="flow" role="tabpanel" aria-labelledby="tab-flow" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>03</span><small>Análisis heurístico</small></div>
+        <p>Análisis heurístico del flujo principal. Las pantallas analizadas incluyen la pantalla de inicio, la sección completa de juegos y todo el flujo de navegación asociado a estas pantallas.</p>
+      </div>
+      <div class="flujos">
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Task flow</h3><p class="flujo__desc">Los pasos mínimos que hace el usuario para completar cada tarea.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><img class="flujo__img" src="assets/neverland/flow-task.svg" alt="Task flow de Neverland: abre la app, inicia sesión, toca la sección canjear, ve el catálogo, elige un producto, confirma el canje y éxito" width="1100"></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">User flow</h3><p class="flujo__desc">Todas las decisiones y caminos posibles dentro de la app.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><img class="flujo__img" src="assets/neverland/flow-user.svg?v=2" alt="User flow de Neverland: registro, ingreso, verificación y canje de puntos con sus decisiones" width="3700" loading="lazy"></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Wireflow</h3><p class="flujo__desc">Las pantallas en orden, con el elemento que se toca en cada paso.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><img class="flujo__img" src="assets/neverland/flow-wire.svg" alt="Wireflow de Neverland: las 15 pantallas del recorrido" width="2600" loading="lazy"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 04 DISEÑO DE INTERFAZ ============ -->
+    <section class="etapa" id="diseno" role="tabpanel" aria-labelledby="tab-diseno" hidden>
+      <div class="etapa__intro" style="align-items:flex-start">
+        <div class="etapa__numero"><span>04</span><small>Diseño de la interfaz</small></div>
+        <div class="etapa__texto-boton" style="gap:20px">
+          <p>Prototipo final de la interfaz en contexto.</p>
+          <a class="boton-prototipo" href="https://www.figma.com/proto/XYeY8g00IWMAOTtbERhEFe/TP-2---Prototipo?node-id=37-215&amp;viewport=357%2C325%2C0.06&amp;t=3IKKrg5zb5UFkaEu-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=37%3A214&amp;starting-point-node-id=37%3A215&amp;show-proto-sidebar=1" target="_blank" rel="noopener">Link al prototipo</a>
+        </div>
+      </div>
+      <div class="escala escala--celular" data-ancho="347" data-alto="662">
+        <div class="maqueta maqueta--celular">
+          <img src="assets/neverland/celular.png" alt="Prototipo de Neverland en un celular: pantalla de bienvenida" class="maqueta__celular">
+          <div class="maqueta__celular-pantalla"><video src="assets/neverland/video.mp4?v=2" autoplay muted loop playsinline preload="metadata" aria-label="Video del prototipo de Neverland en un celular"></video></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 UI KIT ============ -->
+    <section class="etapa" id="uikit" role="tabpanel" aria-labelledby="tab-uikit" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>05</span><small>UI Kit</small></div>
+        <p>El UI Kit define los elementos visuales y de interacción de la app para mantener claridad y consistencia en la experiencia. Incluye paleta cromática, tipografías, íconos, botones, inputs, cards, gamificación y personaje.</p>
+      </div>
+      <img src="assets/neverland/ui-kit.png" alt="UI Kit de Neverland: paleta cromática, tipografías, tamaños de imágenes, botones, íconos e inputs" class="uikit" loading="lazy">
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="pie">
+    <div class="pie__fila">
+      <span>© 2026 Pilar Marino. Todos los derechos reservados.</span>
+      <span>Buenos Aires, Argentina</span>
+    </div>
+  </footer>
+
+  <button class="accesibilidad" type="button" aria-label="Opciones de accesibilidad">
+    <span class="bleed" style="inset:-20%"><img src="assets/icon-a11y.svg" alt=""></span>
+  </button>
+
+  <script src="js/main.js?v=3"></script>
+  <script src="js/detalle.js?v=5"></script>
+</body>
+</html>

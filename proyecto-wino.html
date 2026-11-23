@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wino · Pilar Marino</title>
+  <meta name="description" content="Wino: sistema de gestión de pedidos para una vinería, en tablet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Inter:opsz,wght@14..32,500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=8">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="encabezado">
+    <div class="encabezado__inner">
+      <a href="index.html#inicio" class="encabezado__logo" aria-label="Pilar Marino, inicio">PI.MARINO</a>
+      <nav class="encabezado__nav" aria-label="Principal">
+        <a class="navlink" href="proyectos.html">Proyectos</a>
+        <a class="navlink" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detalle">
+
+    <!-- ============ CABECERA DEL PROYECTO ============ -->
+    <div class="detalle__contenedor">
+      <a href="proyectos.html" class="boton-atras">
+        <img src="assets/tinta/icon-atras.svg" alt="" class="boton-atras__icono"> Atrás
+      </a>
+
+      <section class="detalle__hero">
+        <img src="assets/wino/hero.jpg" alt="Sistema Wino en una tablet de punto de venta en una vinería" class="detalle__imagen">
+        <div class="detalle__info detalle__info--ancha">
+          <div class="detalle__textos">
+            <p class="detalle__anio">2026</p>
+            <h1 class="detalle__titulo">Wino</h1>
+            <p class="detalle__tipo">Sistema de gestión de pedidos en bar</p>
+            <p>Este proyecto consiste en el diseño de una interfaz digital para la gestión de pedidos en una vinería, considerando las necesidades operativas de los meseros y de cocina, priorizando la claridad de la información, la rapidez de interacción y la reducción de errores.</p>
+          </div>
+          <ul class="detalle__tags">
+            <li class="tag">Sistema de gestión de pedidos</li>
+            <li class="tag">POS - Tablet</li>
+            <li class="tag">Procesos</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ BARRA DE SUBSECCIONES ============ -->
+    <div class="subnav">
+      <div class="subnav__inner" role="tablist" aria-label="Etapas del proyecto">
+        <button class="subnav__boton" role="tab" id="tab-benchmark" aria-controls="benchmark" aria-selected="true">Benchmark</button>
+        <button class="subnav__boton" role="tab" id="tab-flow" aria-controls="flow" aria-selected="false">Flow de interacción</button>
+        <button class="subnav__boton" role="tab" id="tab-diseno" aria-controls="diseno" aria-selected="false">Diseño de interfaz</button>
+        <button class="subnav__boton" role="tab" id="tab-evaluacion" aria-controls="evaluacion" aria-selected="false">Evaluación de prototipo</button>
+        <button class="subnav__boton" role="tab" id="tab-mejoras" aria-controls="mejoras" aria-selected="false">Mejoras realizadas</button>
+        <button class="subnav__boton" role="tab" id="tab-uikit" aria-controls="uikit" aria-selected="false">UI Kit</button>
+      </div>
+    </div>
+
+    <!-- ============ 01 BENCHMARK ============ -->
+    <section class="etapa" id="benchmark" role="tabpanel" aria-labelledby="tab-benchmark">
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>01</span><small>Benchmark</small></div>
+        <p>En esta etapa se realizó un análisis comparativo de otras interfaces para comprender las soluciones existentes, identificar oportunidades de mejora y detectar buenas prácticas aplicables al desarrollo de la propuesta.</p>
+      </div>
+
+      <ul class="referentes">
+        <li class="referente">
+          <img src="assets/wino/rustica.png" alt="Logo de Rústica Pastelería" class="redondeado">
+          <div>
+            <h3>Rústica Pastelería</h3>
+            <p>Cafetería y pastelería dentro de la universidad UADE, ofrece bebidas, snacks, pastelería y sánguches. Tiene servicio para llevar, por lo que no asignan mesas, solo se pide y se retira.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/wino/cantina.png" alt="Logo de La Cantina" class="redondeado">
+          <div>
+            <h3>La Cantina</h3>
+            <p>Bar de la universidad UADE, ofrece cafetería, snacks, almuerzos y cenas, pastelería, y más. Tiene servicio para llevar, por lo que no asignan mesas, simplemente se pide y se retira.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/wino/sanmiguel.png" alt="Logo de San Miguel" class="redondeado">
+          <div>
+            <h3>San Miguel</h3>
+            <p>Confitería ubicada en Recoleta, ofrece para desayunar y merendar, además de platos para almorzar y/o cenar. Cuenta con mesas adentro y afuera del local.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="etapa__bloque">
+        <h2 class="etapa__subtitulo">Conclusiones</h2>
+        <p>Este proyecto consiste en el diseño de una aplicación de lectura digital para tablet, enfocada en generar una experiencia clara, intuitiva y centrada en el contenido.</p>
+      </div>
+
+      <ul class="tarjetas tarjetas--cinco">
+        <li class="tarjeta"><h3>Claridad visual y jerarquía de la información</h3><p>Una interfaz para meseros debe establecer una organización visual que permita identificar de un vistazo qué acción corresponde a cada momento del servicio.</p></li>
+        <li class="tarjeta"><h3>Vocabulario adaptado al rol del operador</h3><p>El sistema a diseñar debe priorizar un vocabulario simple, directo y propio del lenguaje gastronómico, de modo que cualquier operador pueda comprender las acciones disponibles sin necesidad de capacitación extensa.</p></li>
+        <li class="tarjeta"><h3>Indicación del estado del proceso</h3><p>La interfaz a desarrollar debe mostrar en todo momento el estado de cada pedido y del salón en general.</p></li>
+        <li class="tarjeta"><h3>El proceso de pago como referencia positiva.</h3><p>Este aspecto puede tomarse como referencia positiva, priorizando la simplicidad y la confirmación clara al momento de diseñar el proceso de pago de la nueva interfaz.</p></li>
+        <li class="tarjeta"><h3>Fluidez operativa y cantidad de pasos.</h3><p>Para un entorno de alta demanda como un bar o restaurante, reducir la fricción en cada interacción y minimizar los pasos necesarios para registrar y cerrar un pedido es una decisión de diseño prioritaria.</p></li>
+      </ul>
+    </section>
+
+    <!-- ============ 02 FLOWS ============ -->
+    <section class="etapa" id="flow" role="tabpanel" aria-labelledby="tab-flow" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>02</span><small>Flows</small></div>
+        <p>Se definió el flujo de navegación para organizar el recorrido del usuario dentro de la interfaz, estableciendo la secuencia de acciones y la relación entre las diferentes pantallas o secciones con el fin de garantizar una experiencia clara y coherente.</p>
+      </div>
+      <div class="flujos">
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Task flow</h3><p class="flujo__desc">Los pasos mínimos que hace el usuario para completar cada tarea.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><svg class="fl-svg" width="1914" height="759" viewBox="-16.0 -16.0 1595.3 632.1" role="img" aria-label="Task flow" xmlns="http://www.w3.org/2000/svg"><defs><marker id="fl-wino-task" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><foreignObject width="779.6" height="16" transform="translate(0 0)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:13.7px;font-weight:600">Encargado</p></foreignObject><rect width="1555.3" height="184.7" rx="47.9" fill="#000000" fill-opacity="0.1" transform="translate(0 34.5)"/><rect width="112.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(47.9 75.6)"/><foreignObject width="96" height="15" transform="translate(58.1 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Ingresa al sistema</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(173.4 98.8)"/><rect width="80.7" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(203.5 75.6)"/><foreignObject width="60.2" height="28" transform="translate(213.7 85.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Selecciona el perfil</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(297.2 98.8)"/><rect width="125.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(327.3 75.6)"/><foreignObject width="109" height="15" transform="translate(337.5 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Ve el mapa del salón</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(465.8 98.8)"/><rect width="130.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(495.9 75.6)"/><foreignObject width="114" height="15" transform="translate(506.1 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Selecciona las mesas</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(639.4 98.8)"/><rect width="127.2" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(669.5 75.6)"/><foreignObject width="106.7" height="28" transform="translate(679.7 85.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Selecciona los productos</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(809.7 98.8)"/><rect width="132.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(839.8 75.6)"/><foreignObject width="116" height="15" transform="translate(850 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Envía a cocina y barra</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(985.3 98.8)"/><rect width="173.7" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(1015.4 75.6)"/><foreignObject width="153.2" height="28" transform="translate(1025.6 85.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Confirmación de pedido listo por parte de cocina y barra</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(1202.1 98.8)"/><rect width="153.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(1232.2 75.6)"/><foreignObject width="137" height="15" transform="translate(1242.4 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Sirve el pedido y confirma</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(1398.7 98.8)"/><rect width="102.5" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(1428.8 75.6)"/><foreignObject width="86" height="15" transform="translate(1439 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center;white-space:nowrap">Cierra el pedido</p></foreignObject><foreignObject width="779.6" height="16" transform="translate(0 246.5)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:13.7px;font-weight:600;color:#0a0a0a">Cocina</p></foreignObject><rect width="1555.3" height="128.6" rx="47.9" fill="#000000" fill-opacity="0.1" transform="translate(0 281)"/><rect width="149.8" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(47.9 322.1)"/><foreignObject width="129.3" height="28" transform="translate(58.1 332.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Recibe pedido por parte de salón (encargado)</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(211.3 345.3)"/><rect width="133.4" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(242.1 322.1)"/><foreignObject width="112.8" height="28" transform="translate(252.4 332.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Actualiza el estado de cada pedido</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(389.1 345.3)"/><rect width="133.4" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(419.9 322.1)"/><foreignObject width="112.8" height="28" transform="translate(430.2 332.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Pedido finalizado y ocultado</p></foreignObject><foreignObject width="779.6" height="16" transform="translate(0 437)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:13.7px;font-weight:600;color:#0a0a0a">Barra</p></foreignObject><rect width="1555.3" height="128.6" rx="47.9" fill="#000000" fill-opacity="0.1" transform="translate(0 471.5)"/><rect width="149.8" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(47.9 512.5)"/><foreignObject width="129.3" height="28" transform="translate(58.1 522.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Recibe pedido por parte de salón (encargado)</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(211.3 535.8)"/><rect width="133.4" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(242.1 512.5)"/><foreignObject width="112.8" height="28" transform="translate(252.4 522.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Actualiza el estado de cada pedido</p></foreignObject><path d="M 0 0 L 17.1 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-task)" transform="translate(389.1 535.8)"/><rect width="133.4" height="46.5" rx="54.7" fill="#000000" fill-opacity="0.1" transform="translate(419.9 512.5)"/><foreignObject width="112.8" height="28" transform="translate(430.2 522.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:10.9px;font-weight:300;text-align:center">Pedido finalizado y ocultado</p></foreignObject></svg></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">User flow</h3><p class="flujo__desc">Todas las decisiones y caminos posibles dentro de la app.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><svg class="fl-svg" width="4759" height="1086" viewBox="-16.0 -16.0 2974.5 678.7" role="img" aria-label="User flow" xmlns="http://www.w3.org/2000/svg"><defs><marker id="fl-wino-user" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><foreignObject width="768" height="13" transform="translate(0 0)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.4px;font-weight:600">Encargado</p></foreignObject><rect width="2934.5" height="244.3" rx="39.8" fill="#000000" fill-opacity="0.1" transform="translate(0 28)"/><path d="M45.5 27.3 C70.6 27.3 90.9 21.2 90.9 13.6 C90.9 6.1 70.6 0 45.5 0 C20.4 0 0 6.1 0 13.6 C0 21.2 20.4 27.3 45.5 27.3 Z" fill="#000000" fill-opacity="0.7" transform="translate(39.8 87.1)"/><foreignObject width="54" height="12" transform="translate(59.8 96.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#ffffff;text-align:center;white-space:nowrap">Abre sistema</p></foreignObject><rect width="59.7" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(418.8 84.3)"/><foreignObject width="46" height="22" transform="translate(425.6 91.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Ve el mapa del salón</p></foreignObject><rect width="73.3" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(158.5 84.3)"/><foreignObject width="59.7" height="22" transform="translate(165.4 91.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Ve los perfiles del personal</p></foreignObject><rect width="59.7" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(820 83.7)"/><foreignObject width="46" height="22" transform="translate(826.8 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Estado de la mesa</p></foreignObject><rect width="64.2" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(1233.7 83.7)"/><foreignObject width="50.6" height="22" transform="translate(1240.5 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Listado de productos</p></foreignObject><rect width="77.3" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(1624.6 83.7)"/><foreignObject width="63.6" height="22" transform="translate(1631.5 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Confirmación de pedido listo</p></foreignObject><rect width="77.3" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(1503 83.7)"/><foreignObject width="63.6" height="22" transform="translate(1509.8 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Se envía pedido a cocina</p></foreignObject><rect width="106.6" height="23.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(2388.4 88.3)"/><foreignObject width="97" height="12" transform="translate(2395.2 95.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Ve el resumen de cuenta</p></foreignObject><rect width="151.2" height="43.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(2375.3 151.4)"/><foreignObject width="137.5" height="32" transform="translate(2382.1 158.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Ve el resumen de cuenta con productos seleccionables y con opción de indicar monto</p></foreignObject><rect width="97.7" height="23.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(2707.2 88.3)"/><foreignObject width="84.1" height="12" transform="translate(2714 95.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Proceso de pago</p></foreignObject><rect width="76.6" height="23.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(2833.9 88.3)"/><foreignObject width="67" height="12" transform="translate(2840.7 95.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Cierre de pedido</p></foreignObject><rect width="59.7" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(670.5 147.9)"/><foreignObject width="46" height="22" transform="translate(677.4 154.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Apertura de mesa</p></foreignObject><path d="M 0 0 L 0 219.9" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 818.3 101.9)"/><foreignObject width="11" height="12" transform="translate(1195 85.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="15" height="12" transform="translate(2029.8 85.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="15" height="12" transform="translate(2327.6 88.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="15" height="12" transform="translate(619.4 90)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="11" height="12" transform="translate(534.7 132)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="15" height="12" transform="translate(1124.6 130.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="11" height="12" transform="translate(1983.2 62.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="11" height="12" transform="translate(2277.6 132.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Si</p></foreignObject><path d="M 0 0 L 0 24.4" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-user)" transform="translate(548.9 126.4)"/><path d="M 0 0 L 0 21.6" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-user)" transform="translate(1139.9 125.2)"/><path d="M 0 0 L 0 33" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-wino-user)" transform="matrix(-1 0 0 -1 850.1 151.9)"/><path d="M 0 0 L 0 56.3" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 786.5 164.4)"/><path d="M 0 0 L 0 49.4" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 929.1 100.2)"/><path d="M 0 0 L 0 30.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1088.2 100.2)"/><path d="M 0 0 L 0 56.3" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 668.8 164.4)"/><path d="M 989.9 13.1 L 989.9 0 L 0 0 L 0 23.3" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" transform="translate(985.9 62.1)"/><path d="M 123 0 L 123 56 L 0 56" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(-1 0 0 1 1117.2 115.8)"/><path d="M 0 0 L 0 22.7" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 153.4 100.8)"/><path d="M 0 0 L 0 22.7" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 254.6 100.8)"/><path d="M 0 0 L 0 31.8" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 417.1 100.8)"/><path d="M 0 0 L 0 19.3" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 497.8 101.4)"/><path d="M 0 0 L 0 23.9" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2221.3 100.2)"/><path d="M 0 0 L 0 64.2" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2385.5 100.2)"/><path d="M 0 0 L 0 39.2" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2372.5 173)"/><path d="M 0 0 L 0 34.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2560.5 173)"/><path d="M 0 0 L 0 25.6" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2703.7 100.2)"/><path d="M 0 0 L 0 25.6" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2830.5 100.2)"/><path d="M 0 0 L 0 57.4" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2552.6 100.2)"/><path d="M 0 0 L 0 43.2" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="translate(2625.9 117.3)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1231.4 100.2)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 2067.9 100.2)"/><path d="M 0 0 L 0 33.5" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(-1 0 0 -1 2273 158.7)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1329.1 100.2)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1500.2 100.2)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1622.4 100.8)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1744 100.2)"/><path d="M 0 0 L 0 49.4" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 1924.1 100.2)"/><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(783.1 151.9)"/><foreignObject width="83.5" height="22" transform="translate(809.2 154.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Ingresa número de comensales</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(481.3 151.9)"/><foreignObject width="83.5" height="22" transform="translate(507.4 154.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Selecciona la mesa o mesas a unificar</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(254.6 90)"/><foreignObject width="83.5" height="22" transform="translate(280.7 93.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Elige su perfil y pone el pin</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(925.7 87.7)"/><foreignObject width="83.5" height="22" transform="translate(952.4 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Busca el producto a agregar al pedido</p></foreignObject><path d="M22.7 45.5 C35.3 45.5 45.5 35.3 45.5 22.7 C45.5 10.2 35.3 0 22.7 0 C10.2 0 0 10.2 0 22.7 C0 35.3 10.2 45.5 22.7 45.5 Z" fill="#406000" transform="translate(1117.2 149.1)"/><foreignObject width="36.9" height="20" transform="translate(1121.2 162.7)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#ffffff;text-align:center">Notifica al usuario</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(1325.7 87.7)"/><foreignObject width="77" height="12" transform="translate(1359.8 94)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Agrega el producto</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(1744 87.7)"/><foreignObject width="108" height="12" transform="translate(1758.2 95.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Sirve el pedido y confirma</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(2066.7 87.7)"/><foreignObject width="64" height="12" transform="translate(2104.2 95.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Cierra el pedido</p></foreignObject><path d="M11.4 0 L130.7 0 L119.3 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(2552.6 87.7)"/><foreignObject width="77.3" height="22" transform="translate(2579.3 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Selecciona el método de pago</p></foreignObject><path d="M11.4 0 L130.7 0 L119.3 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(2207.7 160.5)"/><foreignObject width="99" height="12" transform="translate(2225.8 167.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center;white-space:nowrap">Selecciona dividir cuenta</p></foreignObject><path d="M11.4 0 L130.7 0 L119.3 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(2560.5 160.5)"/><foreignObject width="104" height="22" transform="translate(2574.2 163.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Selecciona el producto o monto que va a cobrar</p></foreignObject><path d="M50 0 L100 25 L50 50 L0 25 L50 0 Z" fill="#76b000" transform="translate(498.9 76.9)"/><foreignObject width="61.9" height="22" transform="translate(518.2 92.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#faf9f5;text-align:center">¿La mesa está disponible?</p></foreignObject><path d="M50 0 L100 25 L50 50 L0 25 L50 0 Z" fill="#76b000" transform="translate(1089.9 75.2)"/><foreignObject width="61.9" height="22" transform="translate(1109.2 90.6)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#faf9f5;text-align:center">¿Encuentra el producto?</p></foreignObject><path d="M50 0 L100 25 L50 50 L0 25 L50 0 Z" fill="#76b000" transform="translate(1925.8 75.2)"/><foreignObject width="61.9" height="22" transform="translate(1944.6 91.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#faf9f5;text-align:center">¿El cliente pide algo más?</p></foreignObject><path d="M50 0 L100 25 L50 50 L0 25 L50 0 Z" fill="#76b000" transform="translate(2223 75.2)"/><foreignObject width="61.9" height="32" transform="translate(2241.8 85.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;color:#faf9f5;text-align:center">¿El cliente quiere dividir la cuenta?</p></foreignObject><foreignObject width="768" height="13" transform="translate(0 295.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.4px;font-weight:600;color:#0a0a0a">Cocina</p></foreignObject><rect width="2934.5" height="136.4" rx="39.8" fill="#000000" fill-opacity="0.1" transform="translate(0 323.2)"/><rect width="64.2" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(39.8 357.3)"/><foreignObject width="50.6" height="22" transform="translate(46.6 364.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Estados de pedidos</p></foreignObject><rect width="84.1" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(319.4 357.3)"/><foreignObject width="70.5" height="22" transform="translate(326.2 364.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">El producto cambia de estado</p></foreignObject><rect width="84.1" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(629.6 357.3)"/><foreignObject width="70.5" height="22" transform="translate(636.4 364.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Pedido servido se oculta</p></foreignObject><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 146 375.5)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 317.7 375.5)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 621.7 375.5)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 445.5 375.5)"/><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(144.3 363)"/><foreignObject width="108" height="22" transform="translate(158.5 365.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Actualiza el estado del producto a “En preparación”</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(447.2 363)"/><foreignObject width="108" height="22" transform="translate(461.4 365.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Actualiza el estado del producto a “Listo”</p></foreignObject><foreignObject width="768" height="13" transform="translate(0 482.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.4px;font-weight:600;color:#0a0a0a">Barra</p></foreignObject><rect width="2934.5" height="136.4" rx="39.8" fill="#000000" fill-opacity="0.1" transform="translate(0 510.3)"/><rect width="64.2" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(39.8 544.4)"/><foreignObject width="50.6" height="22" transform="translate(46.6 551.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Estados de pedidos</p></foreignObject><rect width="84.1" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(319.4 544.4)"/><foreignObject width="70.5" height="22" transform="translate(326.2 551.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">El producto cambia de estado</p></foreignObject><rect width="84.1" height="33.6" rx="3.4" fill="#000000" fill-opacity="0.2" transform="translate(629.6 544.4)"/><foreignObject width="70.5" height="22" transform="translate(636.4 551.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Pedido servido se oculta</p></foreignObject><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 146 562.6)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 317.7 562.6)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 621.7 562.6)"/><path d="M 0 0 L 0 42.1" fill="none" stroke="#9c9a92" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-wino-user)" transform="matrix(0 1 -1 0 445.5 562.6)"/><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(144.3 550.1)"/><foreignObject width="108" height="22" transform="translate(158.5 553)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Actualiza el estado del producto a “En preparación”</p></foreignObject><path d="M11.4 0 L136.4 0 L125 25 L0 25 L11.4 0 Z" fill="#76b000" fill-opacity="0.2" transform="translate(447.2 550.1)"/><foreignObject width="108" height="22" transform="translate(461.4 553)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:8px;text-align:center">Actualiza el estado del producto a “Listo”</p></foreignObject></svg></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Wireflow</h3><p class="flujo__desc">Las pantallas en orden, con el elemento que se toca en cada paso.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><img class="flujo__img" src="assets/wino/flow-wire.svg?v=2" alt="Wireflow de Wino: pantallas del encargado, la cocina y la barra" width="2000" loading="lazy"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 03 DISEÑO DE INTERFAZ ============ -->
+    <section class="etapa" id="diseno" role="tabpanel" aria-labelledby="tab-diseno" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>03</span><small>Diseño de la interfaz</small></div>
+        <div class="etapa__texto-boton">
+          <p>Prototipo final de la interfaz en contexto.</p>
+          <a class="boton-prototipo" href="https://www.figma.com/proto/XYeY8g00IWMAOTtbERhEFe/TP-2---Prototipo?node-id=37-215&amp;viewport=357%2C325%2C0.06&amp;t=3IKKrg5zb5UFkaEu-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=37%3A214&amp;starting-point-node-id=37%3A215&amp;show-proto-sidebar=1" target="_blank" rel="noopener">Link al prototipo</a>
+        </div>
+      </div>
+      <div class="escala" data-ancho="1099" data-alto="806">
+        <div class="maqueta">
+          <video class="maqueta__pantalla" src="assets/wino/video.mp4" poster="assets/wino/grabacion.png" data-velocidad="2" autoplay muted loop playsinline preload="metadata" aria-label="Video del prototipo de Wino en una tablet" style="border-radius:63px;object-fit:cover"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 EVALUACIÓN ============ -->
+    <section class="etapa" id="evaluacion" role="tabpanel" aria-labelledby="tab-evaluacion" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>04</span><small>Evaluación de usabilidad</small></div>
+        <p>Durante el proceso de diseño se evaluó la interfaz aplicando los principios heurísticos de Nielsen, priorizando aquellos más críticos para una interfaz de pedidos.</p>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Análisis heurístico</h2>
+        <ul class="carrusel heuristicas">
+          <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>El mapa del salón muestra en todo momento el estado de cada mesa mediante colores diferenciados, y el panel lateral actualiza el resumen del pedido en tiempo real, manteniéndolo informado sobre lo que está sucediendo sin necesidad de navegar.</p></li>
+          <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>La interfaz utiliza terminología propia del rubro gastronómico como, "comanda" y "cuenta", y representa el salón visualmente tal como se vería desde la barra, facilitando una lectura inmediata del entorno.</p></li>
+          <li class="heuristica"><h3># 3 Control y libertad del usuario</h3><p>El encargado puede modificar o eliminar ítems del pedido antes de confirmar, y cada pantalla cuenta con un botón de cancelar o volver claramente visible, permitiéndole salir de cualquier estado sin consecuencias.</p></li>
+          <li class="heuristica"><h3>#4 Consistencia y estándares</h3><p>Los colores, la ubicación de los botones y la barra superior se mantienen iguales en todas las pantallas, de modo que no necesitan reaprender la lógica del sistema cada vez que cambia de vista.</p></li>
+          <li class="heuristica"><h3>#5 Prevención de errores</h3><p>Las mesas ocupadas se diferencian visualmente de las libres para evitar abrirlas por error, y el sistema calcula automáticamente el monto restante en el pago dividido, reduciendo los errores de cálculo manual.</p></li>
+          <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>Los productos se muestran con imagen y nombre, el resumen del pedido permanece visible mientras se seleccionan ítems, y el mapa muestra el estado del salón completo de un vistazo, sin exigirle al usuario que memorice nada.</p></li>
+          <li class="heuristica"><h3>#7 Flexibilidad y eficiencia de uso</h3><p>Las acciones más frecuentes como agregar un producto o abrir una mesa requieren un solo toque, y funciones como juntar mesas o dividir la cuenta están disponibles directamente en el flujo principal sin pasos adicionales.</p></li>
+          <li class="heuristica"><h3>#8 Estética y diseño minimalista</h3><p>Cada pantalla muestra únicamente la información necesaria para la tarea en curso, con una paleta reducida donde cada color cumple una función específica y sin elementos decorativos que compitan con la operación.</p></li>
+          <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>El flujo es lo suficientemente intuitivo para operar sin documentación y en momentos críticos como el pago por QR, el sistema muestra los pasos del proceso en lenguaje claro para que sepa en qué punto está.</p></li>
+          <li class="heuristica"><h3>#10 Ayuda y documentación</h3><p>El flujo general de la app es lo suficientemente intuitivo como para que un usuario entrenado pueda operar sin documentación.</p></li>
+        </ul>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Pruebas de usabilidad</h2>
+
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 01: Unificar mesas</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Lograste unificar ambas mesas para gestionarlas como una única comanda?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:var(--acento)" role="img" aria-label="100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+                <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Cuánto tiempo te tomó aproximadamente encontrar y utilizar la función para unir mesas?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="80% menos de 1 minuto, 20% de 1 a 2 minutos"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
+                <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Qué tan sencillo te resultó realizar la unificación de mesas dentro del sistema?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="80% muy fácil, 20% fácil"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 02: Cargar y gestionar el pedido</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Lograste registrar correctamente todas las comidas y bebidas y actualizar su estado hasta que fueron servidas?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:var(--acento)" role="img" aria-label="100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+                <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Cuánto tiempo te tomó aproximadamente cargar el pedido completo y gestionar los cambios de estado?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(var(--acento-claro) 0 20%, var(--acento) 0 80%, var(--acento-oscuro) 0)" role="img" aria-label="60%, 20% y 20%"><span style="left:86.16px;top:141.37px">60%</span><span class="oscuro" style="left:153.08px;top:58.56px">20%</span><span style="left:75.29px;top:32.62px">20%</span></div>
+                <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Qué tan clara y cómoda te resultó la gestión del pedido dentro del sistema?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento) 0)" role="img" aria-label="60% muy fácil, 40% fácil"><span style="left:86.44px;top:53.79px">60%</span><span style="left:86.44px;top:152.82px">40%</span></div>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 03: Dividir y cerrar la cuenta</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Lograste registrar correctamente el pago en efectivo de los productos indicados y dividir el monto restante entre tarjeta y Mercado Pago?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:var(--acento)" role="img" aria-label="100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+                <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Cuánto tiempo te tomó aproximadamente completar el proceso de cobro y cierre de la cuenta?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="80% y 20%"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
+                <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+              </div>
+            </figure>
+            <figure class="grafico grafico--pregunta">
+              <p class="grafico__pregunta">¿Qué tan sencillo y comprensible te resultó gestionar los pagos y cerrar la cuenta en el sistema?</p>
+              <div class="grafico__fila">
+                <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento-claro) 0 60%, var(--acento) 0)" role="img" aria-label="40%, 40% y 20%"><span style="left:91.93px;top:47.2px">40%</span><span style="left:91.93px;top:160.9px">40%</span><span class="oscuro" style="left:22.15px;top:95.36px">20%</span></div>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <p class="tarea__conclusion">Los resultados del test mostraron una efectividad del 100% en las tres tareas, ya que todos los usuarios lograron completarlas correctamente. En cuanto a la eficiencia, la mayoría resolvió cada tarea en menos de un minuto. Respecto a la satisfacción, las tareas 1 y 2 fueron las mejor valoradas, mientras que la tarea 3 presentó un poco más de dificultad.</p>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Leyes UX</h2>
+        <ul class="leyes">
+          <li class="ley"><h3>Ley de Hick</h3><p>El mapa de mesas organiza visualmente las mesas por color y estado, reduciendo el tiempo de búsqueda: el encargado tiene que leer texto, sino identificar el color de la mesa que necesita.</p><p>La selección de productos está dividida por categorías (comidas, vinos por copa), de modo que el encargado nunca ve toda la carta al mismo tiempo sino una sección a la vez.</p></li>
+          <li class="ley"><h3>Ley de Fitts</h3><p>Las tarjetas de producto en la selección de comidas y vinos son grandes, con imagen y nombre visible, aptas para uso táctil sin riesgo de error de toque.</p><p>El botón de acción principal está siempre ubicado en la parte inferior derecha del panel, zona de fácil acceso con la mano derecha en una tablet horizontal.</p><p>El teclado numérico para ingresar el número de comensales usa teclas grandes con buena separación entre ellas, reduciendo errores de toque.</p></li>
+          <li class="ley"><h3>Ley de Jakob</h3><p>El layout de resumen del pedido + productos sigue el patrón de los sistemas POS más conocidos del mercado, lo que hace que un operador con experiencia previa en sistemas similares se adapte rápidamente.</p><p>El teclado numérico para ingresar cantidad de comensales sigue el patrón de teclado telefónico, universal y sin necesidad de aprendizaje.</p><p>El flujo de pago con pantalla de confirmación replica el patrón de apps de pago como MercadoPago.</p></li>
+          <li class="ley"><h3>Ley de Miller</h3><p>El mapa del salón organiza las mesas en grupos visuales por zona, evitando que tengan que procesar las 15 mesas como una lista lineal.</p><p>El resumen del pedido en el panel lateral muestra los ítems ya seleccionados de forma persistente, evitando que el encargado tenga que memorizar lo que ya cargó mientras sigue seleccionando productos.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 05 MEJORAS ============ -->
+    <section class="etapa" id="mejoras" role="tabpanel" aria-labelledby="tab-mejoras" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>05</span><small>Mejoras realizadas</small></div>
+        <p>Se detallan los cambios implementados en el prototipo a partir de los resultados obtenidos en el análisis heurístico y los testeos de usabilidad. Las mejoras responden a problemas detectados en la interacción, con el objetivo de optimizar la navegación, facilitar la comprensión del sistema y mejorar la experiencia general.</p>
+      </div>
+
+      <!-- Capturas de tablet: la imagen mide 368.2 × 257.2 y arranca 22px abajo del texto "Antes" -->
+      <ul class="carrusel mejoras mejoras--tablet">
+        <li class="mejora">
+          <h3>Teclado numérico del PIN</h3>
+          <p>Se cambio el teclado numérico para ingresar el número de pin ya que contenía íconos cuya función puede no ser obvia y ademas no tenia una consistencia el teclado numérico ya que era diferente al de el número de comensales.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m2.jpg" alt="Teclado del PIN antes del cambio"><i class="marca" style="--x:194.07;--y:173.89;--w:37.56;--h:29.21"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m3.jpg" alt="Teclado del PIN unificado"><i class="marca" style="--x:131.12;--y:173.89;--w:98.77;--h:29.91"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Pantalla de error del PIN</h3>
+          <p>Se diseñó una pantalla de error específica para cuando el usuario ingresa un el mail o la contraseña mal.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m2.jpg" alt="Ingreso del PIN sin pantalla de error"></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m5.jpg" alt="Pantalla de error del PIN"></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Ícono de ayuda</h3>
+          <p>A partir del análisis heurístico, y de los testeos de usabilidad observamos que hacía falta un tooltip en la pantalla de apertura de mesas por lo que agregamos un breve instructivo para esa acción.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m7.jpg" alt="Apertura de mesas sin ayuda"><i class="marca" style="--x:12.52;--y:52.07;--w:90.43;--h:27.82"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m8.jpg" alt="Apertura de mesas con tooltip de ayuda"><i class="marca" style="--x:14.95;--y:56.24;--w:182.94;--h:68.86"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Pantalla de error</h3>
+          <p>Se diseñó una pantalla de error específica para cuando el usuario ingresa un número inválido de comensales.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m10.jpg" alt="Ingreso de comensales sin mensaje de error"></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m11.jpg" alt="Pantalla de error por número inválido de comensales"></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Disponibilidad de productos</h3>
+          <p>Se muestra cómo se visualiza un producto cuando no se encuentra disponible, para evitar confusiones al momento de cargar un pedido.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m13.jpg" alt="Productos sin indicar disponibilidad"><i class="marca" style="--x:288.67;--y:138.91;--w:55.65;--h:59.13"></i><i class="marca" style="--x:178.77;--y:138.91;--w:55.65;--h:59.13"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m15.jpg" alt="Productos no disponibles marcados"><i class="marca" style="--x:289.01;--y:138.91;--w:55.65;--h:59.13"></i><i class="marca" style="--x:179.11;--y:138.91;--w:55.65;--h:59.13"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Botón</h3>
+          <p>Se reemplazó el botón principal por el botón secundario.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m12.jpg" alt="Pantalla con botón principal"><i class="marca" style="--x:103.65;--y:178.56;--w:151.64;--h:22.26"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m14.jpg" alt="Pantalla con botón secundario"><i class="marca" style="--x:105.38;--y:179.26;--w:148.86;--h:20.17"></i></div></figure>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 06 UI KIT ============ -->
+    <section class="etapa" id="uikit" role="tabpanel" aria-labelledby="tab-uikit" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>06</span><small>UI Kit</small></div>
+        <p>El UI Kit define los elementos visuales y de interacción de la app para mantener claridad y consistencia en la experiencia. Incluye paleta cromática, tipografías, íconos, botones, inputs, cards, gamificación y personaje.</p>
+      </div>
+      <img src="assets/wino/ui-kit.png" alt="UI Kit de Wino: paleta cromática, tipografías, íconos, botones, inputs y cards" class="uikit" loading="lazy">
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="pie">
+    <div class="pie__fila">
+      <span>© 2026 Pilar Marino. Todos los derechos reservados.</span>
+      <span>Buenos Aires, Argentina</span>
+    </div>
+  </footer>
+
+  <button class="accesibilidad" type="button" aria-label="Opciones de accesibilidad">
+    <span class="bleed" style="inset:-20%"><img src="assets/icon-a11y.svg" alt=""></span>
+  </button>
+
+  <script src="js/main.js?v=3"></script>
+  <script src="js/detalle.js?v=5"></script>
+</body>
+</html>

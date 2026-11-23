@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta · Pilar Marino</title>
+  <meta name="description" content="Tinta: aplicación de lectura digital para tablet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Inter:opsz,wght@14..32,500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=8">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="encabezado">
+    <div class="encabezado__inner">
+      <a href="index.html#inicio" class="encabezado__logo" aria-label="Pilar Marino, inicio">PI.MARINO</a>
+      <nav class="encabezado__nav" aria-label="Principal">
+        <a class="navlink" href="proyectos.html">Proyectos</a>
+        <a class="navlink" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detalle">
+
+    <!-- ============ CABECERA DEL PROYECTO ============ -->
+    <div class="detalle__contenedor">
+      <a href="proyectos.html" class="boton-atras">
+        <img src="assets/tinta/icon-atras.svg" alt="" class="boton-atras__icono"> Atrás
+      </a>
+
+      <section class="detalle__hero">
+        <img src="assets/tinta/hero.jpg" alt="Mockups de la app Tinta en varias tablets" class="detalle__imagen">
+        <div class="detalle__info">
+          <div class="detalle__textos">
+            <p class="detalle__anio">2026</p>
+            <h1 class="detalle__titulo">Tinta</h1>
+            <p class="detalle__tipo">App de lectura</p>
+            <p>Este proyecto consiste en el diseño de una aplicación de lectura digital para tablet, enfocada en generar una experiencia clara, intuitiva y centrada en el contenido.</p>
+          </div>
+          <ul class="detalle__tags">
+            <li class="tag">App de lectura</li>
+            <li class="tag">Tablet</li>
+            <li class="tag">Personalización</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ BARRA DE SUBSECCIONES ============ -->
+    <div class="subnav">
+      <div class="subnav__inner" role="tablist" aria-label="Etapas del proyecto">
+        <button class="subnav__boton" role="tab" id="tab-benchmark" aria-controls="benchmark" aria-selected="true">Benchmark</button>
+        <button class="subnav__boton" role="tab" id="tab-flow" aria-controls="flow" aria-selected="false">Flow de interacción</button>
+        <button class="subnav__boton" role="tab" id="tab-diseno" aria-controls="diseno" aria-selected="false">Diseño de interfaz</button>
+        <button class="subnav__boton" role="tab" id="tab-evaluacion" aria-controls="evaluacion" aria-selected="false">Evaluación de prototipo</button>
+        <button class="subnav__boton" role="tab" id="tab-mejoras" aria-controls="mejoras" aria-selected="false">Mejoras realizadas</button>
+        <button class="subnav__boton" role="tab" id="tab-uikit" aria-controls="uikit" aria-selected="false">UI Kit</button>
+      </div>
+    </div>
+
+    <!-- ============ 01 BENCHMARK ============ -->
+    <section class="etapa" id="benchmark" role="tabpanel" aria-labelledby="tab-benchmark">
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>01</span><small>Benchmark</small></div>
+        <p>En esta etapa se realizó un análisis comparativo de otras interfaces para comprender las soluciones existentes, identificar oportunidades de mejora y detectar buenas prácticas aplicables al desarrollo de la propuesta.</p>
+      </div>
+
+      <ul class="referentes">
+        <li class="referente">
+          <img src="assets/tinta/kindle.png" alt="Ícono de Amazon Kindle">
+          <div>
+            <h3>Amazon Kindle</h3>
+            <p>Aplicación de lectura digital centrada en el acceso a un amplio catálogo de libros, que incorpora la posibilidad de leer contenidos adquiridos en Amazon.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/tinta/applebooks.png" alt="Ícono de Apple Books">
+          <div>
+            <h3>Apple Books</h3>
+            <p>Aplicación de lectura digital integrada al ecosistema Apple, que permite comprar, organizar y leer libros con una experiencia centrada en el contenido.</p>
+          </div>
+        </li>
+        <li class="referente">
+          <img src="assets/tinta/kobo.png" alt="Ícono de Kobo Books">
+          <div>
+            <h3>Kobo Books</h3>
+            <p>Aplicación de lectura digital que combina compra y lectura de libros, destacándose por sus opciones de personalización, estadísticas de lectura.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="etapa__bloque">
+        <h2 class="etapa__subtitulo">Conclusiones</h2>
+        <p>Este proyecto consiste en el diseño de una aplicación de lectura digital para tablet, enfocada en generar una experiencia clara, intuitiva y centrada en el contenido.</p>
+      </div>
+
+      <ul class="tarjetas">
+        <li class="tarjeta"><h3>El vocabulario claro y la comprensión del sistema reducen la fricción.</h3><p>Para nuestra app, es importante evitar etiquetas ambiguas y priorizar verbos de acción claros. El sistema debe comunicar su estado y sus opciones de forma transparente en todo momento.</p></li>
+        <li class="tarjeta"><h3>La importancia de un diseño limpio y una jerarquía visual clara.</h3><p>Nuestra app debe jerarquizar el contenido con intención: los elementos primarios dominan la pantalla y los secundarios se mantienen accesibles sin competir con la acción principal.</p></li>
+        <li class="tarjeta"><h3>La navegación simple y orientada a la acción facilita el recorrido del usuario.</h3><p>Para nuestra app, la navegación debe tener opciones bien diferenciadas y reflejar claramente las secciones que el usuario va a usar con más frecuencia.</p></li>
+        <li class="tarjeta"><h3>El onboarding orientado a la lectura mejora la experiencia inicial.</h3><p>Para nuestra app, un onboarding breve de preferencias y uno para los gestos de lectura permite diferenciar la app y mejorar la experiencia desde el primer uso.</p></li>
+        <li class="tarjeta"><h3>El progreso visible sostiene el hábito de lectura.</h3><p>Incorporar el progreso tanto en la experiencia de lectura como en la biblioteca es una práctica que facilita la continuidad y refuerza el hábito de leer.</p></li>
+        <li class="tarjeta"><h3>La accesibilidad como parte del diseño.</h3><p>Para nuestra app, las opciones de personalización de lectura deben estar disponibles de forma sencilla dentro de la vista de lectura y de manera sutil para no interrumpir la lectura.</p></li>
+      </ul>
+    </section>
+
+    <!-- ============ 02 FLOWS ============ -->
+    <section class="etapa" id="flow" role="tabpanel" aria-labelledby="tab-flow" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>02</span><small>Flows</small></div>
+        <p>Se definió el flujo de navegación para organizar el recorrido del usuario dentro de la interfaz, estableciendo la secuencia de acciones y la relación entre las diferentes pantallas o secciones con el fin de garantizar una experiencia clara y coherente.</p>
+      </div>
+      <div class="flujos">
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Task flow</h3><p class="flujo__desc">Los pasos mínimos que hace el usuario para completar cada tarea.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><svg class="fl-svg" width="982" height="86" viewBox="4.0 34.0 1091.6 95.9" role="img" aria-label="Task flow" xmlns="http://www.w3.org/2000/svg"><defs><marker id="fl-tinta-task" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect width="106.9" height="63.2" rx="74.4" fill="#ff8811" transform="translate(20 50.3)"/><foreignObject width="83" height="20" transform="translate(33.9 72.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center;white-space:nowrap">Abre la app</p></foreignObject><path d="M 0 0 L 23.2 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-task)" transform="translate(145.5 81.9)"/><rect width="112.9" height="63.2" rx="74.4" fill="#ff8811" transform="translate(187.3 50.3)"/><foreignObject width="89" height="20" transform="translate(201.3 72.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center;white-space:nowrap">Inicia sesión</p></foreignObject><path d="M 0 0 L 23.2 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-task)" transform="translate(318.8 81.9)"/><rect width="130.9" height="63.2" rx="74.4" fill="#ff8811" transform="translate(360.6 50.3)"/><foreignObject width="107" height="20" transform="translate(374.6 72.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center;white-space:nowrap">Busca un título</p></foreignObject><path d="M 0 0 L 23.2 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-task)" transform="translate(510.1 81.9)"/><rect width="162.7" height="63.9" rx="74.4" fill="#ff8811" transform="translate(552 50)"/><foreignObject width="134.8" height="38" transform="translate(565.9 63.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center">Visualiza los detalles del libro</p></foreignObject><path d="M 0 0 L 23.2 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-task)" transform="translate(733.3 81.9)"/><rect width="113.9" height="63.2" rx="74.4" fill="#ff8811" transform="translate(775.1 50.3)"/><foreignObject width="90" height="20" transform="translate(789 72.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center;white-space:nowrap">Lo descarga</p></foreignObject><path d="M 0 0 L 23.2 0" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-task)" transform="translate(907.6 81.9)"/><rect width="130.2" height="63.2" rx="74.4" fill="#ff8811" transform="translate(949.4 50.3)"/><foreignObject width="108" height="20" transform="translate(962.5 72.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:14.9px;font-weight:300;text-align:center;white-space:nowrap">Inicia la lectura</p></foreignObject></svg></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">User flow</h3><p class="flujo__desc">Todas las decisiones y caminos posibles dentro de la app.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><svg class="fl-svg" width="3201" height="507" viewBox="66.5 -16.0 2783.5 441.0" role="img" aria-label="User flow" xmlns="http://www.w3.org/2000/svg"><defs><marker id="fl-tinta-user" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><path d="M66 39.6 C102.4 39.6 131.9 30.7 131.9 19.8 C131.9 8.9 102.4 0 66 0 C29.5 0 0 8.9 0 19.8 C0 30.7 29.5 39.6 66 39.6 Z" fill="#000000" fill-opacity="0.7" transform="translate(82.5 175.7)"/><foreignObject width="85" height="16" transform="translate(108 188.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#ffffff;text-align:center;white-space:nowrap">Inicio abrir app</p></foreignObject><rect width="86.6" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(249.9 171.5)"/><foreignObject width="66.8" height="30" transform="translate(259.8 181.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Pantalla de bienvenida</p></foreignObject><rect width="86.6" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(395 12.4)"/><foreignObject width="66.8" height="30" transform="translate(404.9 22.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Formulario de registro</p></foreignObject><rect width="93.2" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(1275.7 12.4)"/><foreignObject width="73.4" height="30" transform="translate(1285.6 22.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Confirmación de usuario</p></foreignObject><rect width="86.6" height="33.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(1400.3 19)"/><foreignObject width="66.8" height="16" transform="translate(1410.2 28.9)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Onboarding</p></foreignObject><rect width="86.6" height="33.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(1400.3 270.5)"/><foreignObject width="66.8" height="16" transform="translate(1410.2 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Inicio</p></foreignObject><rect width="141.8" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(1964.3 270.5)"/><foreignObject width="122" height="30" transform="translate(1974.2 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Mira los detalles del libro</p></foreignObject><rect width="141.8" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(2544.1 263.9)"/><foreignObject width="122" height="30" transform="translate(2554 273.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Recorrido guiado de las funcionalidades</p></foreignObject><rect width="106.8" height="33.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(2727.1 270.5)"/><foreignObject width="91" height="16" transform="translate(2737 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Inicio de lectura</p></foreignObject><rect width="86.6" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(395 263.9)"/><foreignObject width="66.8" height="30" transform="translate(404.9 273.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Formulario de ingreso</p></foreignObject><rect width="131.9" height="47.8" rx="4.9" fill="#000000" fill-opacity="0.2" transform="translate(899.7 12.4)"/><foreignObject width="112.2" height="30" transform="translate(909.6 22.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Aviso de verificación por SMS</p></foreignObject><path d="M 0 0 L 0 100.6" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="translate(438.7 61.8)"/><foreignObject width="15" height="16" transform="translate(878.3 10.7)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="15" height="16" transform="translate(1078.7 266.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="20" height="16" transform="translate(807.2 83.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="20" height="16" transform="translate(410.5 137.7)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">No</p></foreignObject><foreignObject width="15" height="16" transform="translate(418.1 240.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Si</p></foreignObject><foreignObject width="20" height="16" transform="translate(983.6 342.2)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">No</p></foreignObject><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-user)" transform="translate(438.7 232.6)"/><path d="M 0 0 L 0 118.8" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 600.4 287.8)"/><path d="M 0 0 L 0 117.9" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 902.2 287.8)"/><path d="M 100.6 0 L 100.6 45.4 L 0 45.4" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(696 71.7)"/><path d="M 100.2 0 L 100.2 54.4 L 0 54.4" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(877 321.6)"/><path d="M 167.4 0 L 167.4 55.3 L 0 55.3" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(-1 0 0 1 628.4 61.8)"/><path d="M 370.3 0 L 370.3 61.4 L 0 61.4" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(-1 0 0 1 809 314.6)"/><path d="M 0 0 L 0 33" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 247.4 195.4)"/><path d="M 0 0 L 0 28" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 364.5 196.3)"/><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 511.3 36.3)"/><path d="M 0 0 L 0 35.5" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1522.3 287.8)"/><path d="M 0 0 L 0 37.1" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1744.2 287.8)"/><path d="M 0 0 L 0 34.6" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1961.9 287.8)"/><path d="M 0 0 L 0 37.1" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 2143.3 287.8)"/><path d="M 0 0 L 0 37.1" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 2540.8 287.8)"/><path d="M 0 0 L 0 37.1" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 2722.2 287.8)"/><path d="M 0 0 L 0 37.1" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 2324.7 287.8)"/><path d="M 0 0 L 0 28" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 722.4 36.3)"/><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 897.2 36.3)"/><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1061.3 36.3)"/><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1274.1 36.3)"/><path d="M 0 0 L 0 29.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1398.6 36.3)"/><path d="M 0 0 L 0 349.7" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#fl-tinta-user)" transform="matrix(0 1 -1 0 1397 287.8)"/><path d="M 0 0 L 0 212.8" fill="none" stroke="#9c9a92" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fl-tinta-user)" transform="translate(1444 52.8)"/><path d="M16.5 0 L197.9 0 L181.4 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(504.7 18.1)"/><foreignObject width="121.2" height="30" transform="translate(542.6 22.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Completa formulario de registro y envía</p></foreignObject><path d="M16.5 0 L197.9 0 L181.4 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(595.4 269.7)"/><foreignObject width="121.2" height="16" transform="translate(633.3 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Ingresa datos y envía</p></foreignObject><path d="M16.5 0 L197.9 0 L181.4 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(1054.7 18.1)"/><foreignObject width="121.2" height="30" transform="translate(1093.5 22.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center">Ingresa a confirmar el usuario con el código</p></foreignObject><path d="M33 66 C51.2 66 66 51.2 66 33 C66 14.8 51.2 0 33 0 C14.8 0 0 14.8 0 33 C0 51.2 14.8 66 33 66 Z" fill="#85003a" transform="translate(628.4 84.1)"/><foreignObject width="63.5" height="41" transform="translate(629.2 97.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#ffffff;text-align:center">Error, notifica al usuario</p></foreignObject><path d="M33 66 C51.2 66 66 51.2 66 33 C66 14.8 51.2 0 33 0 C14.8 0 0 14.8 0 33 C0 51.2 14.8 66 33 66 Z" fill="#85003a" transform="translate(809 343.1)"/><foreignObject width="63.5" height="41" transform="translate(809.8 356.3)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#ffffff;text-align:center">Error, notifica al usuario</p></foreignObject><path d="M16.5 0 L197.9 0 L181.4 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(1517.4 269.7)"/><foreignObject width="85" height="16" transform="translate(1578.4 278.7)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Busca un título</p></foreignObject><path d="M16.5 0 L197.9 0 L181.4 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(1737.6 269.7)"/><foreignObject width="103" height="16" transform="translate(1786.2 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Selecciona el libro</p></foreignObject><path d="M16.5 0 L156.7 0 L140.2 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(2139.2 269.7)"/><foreignObject width="96" height="16" transform="translate(2171.1 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Descarga el libro</p></foreignObject><path d="M16.5 0 L189.7 0 L173.2 36.3 L0 36.3 L16.5 0 Z" fill="#d51672" fill-opacity="0.2" transform="translate(2321.4 269.7)"/><foreignObject width="149" height="16" transform="translate(2343.7 280.4)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;text-align:center;white-space:nowrap">Toca para comenzar a leer</p></foreignObject><path d="M72.6 0 L145.1 36.3 L72.6 72.6 L0 36.3 L72.6 0 Z" fill="#d51672" transform="translate(366.1 160.8)"/><foreignObject width="89.9" height="30" transform="translate(394.2 183.1)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#faf9f5;text-align:center">¿El usuario está registrado?</p></foreignObject><path d="M72.6 0 L145.1 36.3 L72.6 72.6 L0 36.3 L72.6 0 Z" fill="#d51672" transform="translate(724 0)"/><foreignObject width="97" height="16" transform="translate(750.4 29.7)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#faf9f5;text-align:center;white-space:nowrap">¿Registro válido?</p></foreignObject><path d="M72.6 0 L145.1 36.3 L72.6 72.6 L0 36.3 L72.6 0 Z" fill="#d51672" transform="translate(904.6 251.5)"/><foreignObject width="89.9" height="30" transform="translate(932.7 273.8)"><p xmlns="http://www.w3.org/1999/xhtml" style="font-size:11.5px;color:#faf9f5;text-align:center">¿Los datos son válidos?</p></foreignObject></svg></div>
+        </figure>
+        <figure class="flujo">
+          <figcaption class="flujo__cab"><h3 class="flujo__titulo">Wireflow</h3><p class="flujo__desc">Las pantallas en orden, con el elemento que se toca en cada paso.</p><span class="flujo__pista" aria-hidden="true">Deslizá para recorrerlo →</span></figcaption>
+          <div class="flujo__lienzo" tabindex="0"><img class="flujo__wire" src="assets/tinta/wireflow.png" alt="Wireflow de Tinta: secuencia de pantallas" width="1040" loading="lazy"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 03 DISEÑO DE INTERFAZ ============ -->
+    <section class="etapa" id="diseno" role="tabpanel" aria-labelledby="tab-diseno" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>03</span><small>Diseño de la interfaz</small></div>
+        <div class="etapa__texto-boton">
+          <p>Prototipo final de la interfaz en contexto.</p>
+          <a class="boton-prototipo" href="https://www.figma.com/proto/XYeY8g00IWMAOTtbERhEFe/TP-2---Prototipo?node-id=37-215&amp;viewport=357%2C325%2C0.06&amp;t=3IKKrg5zb5UFkaEu-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=37%3A214&amp;starting-point-node-id=37%3A215&amp;show-proto-sidebar=1" target="_blank" rel="noopener">Link al prototipo</a>
+        </div>
+      </div>
+      <div class="escala" data-ancho="1099" data-alto="806">
+        <div class="maqueta">
+          <!-- Video del prototipo (tomado del portfolio de Framer). Se reproduce solo, sin sonido y en loop -->
+          <video class="maqueta__pantalla" src="assets/tinta/video.mp4" poster="assets/tinta/grabacion.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Video del prototipo de Tinta en una tablet"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 EVALUACIÓN ============ -->
+    <section class="etapa" id="evaluacion" role="tabpanel" aria-labelledby="tab-evaluacion" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>04</span><small>Evaluación de usabilidad</small></div>
+        <p>Durante el proceso de diseño se evaluó la interfaz aplicando los principios heurísticos de Nielsen, priorizando aquellos más críticos para una app de lectura digital.</p>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Análisis heurístico</h2>
+        <ul class="carrusel heuristicas">
+          <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>La app mantiene al usuario informado en todo momento. La barra de progreso en la vista de lectura, el indicador de página actual y los pasos del onboarding garantizan que el usuario siempre sepa dónde está dentro de la experiencia.</p></li>
+          <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>La interfaz utiliza lenguaje natural y cercano, evitando tecnicismos. Términos como "Comenzar a leer", "Mi biblioteca" y "Recomendado para vos" resultan familiares para cualquier tipo de usuario.</p></li>
+          <li class="heuristica"><h3># 3 Control y libertad del usuario</h3><p>El usuario puede omitir el onboarding, volver atrás desde la pantalla de éxito de compra y modificar sus preferencias de notificación desde el perfil en cualquier momento, garantizando siempre una salida clara.</p></li>
+          <li class="heuristica"><h3>#4 Consistencia y estándares</h3><p>La interfaz mantiene coherencia visual en tipografía, colores y componentes a lo largo de todas las pantallas. Los botones, cards y popovers respetan el mismo patrón de diseño en toda la app.</p></li>
+          <li class="heuristica"><h3>#5 Prevención de errores</h3><p>Se incorporaron mensajes contextuales al tocar "Omitir" en el onboarding, una pantalla de error para códigos incorrectos y validación en tiempo real en el formulario de registro, reduciendo la posibilidad de que el usuario cometa errores sin saberlo.</p></li>
+          <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>Los libros se muestran siempre con portada, título, autor y género. El índice de capítulos está siempre accesible desde la vista de lectura, reduciendo la carga cognitiva del usuario.</p></li>
+          <li class="heuristica"><h3>#7 Flexibilidad y eficiencia de uso</h3><p>La barra de búsqueda permite encontrar libros rápidamente y la barra de progreso permite saltar a cualquier página con un deslizamiento, facilitando tanto a usuarios nuevos como frecuentes.</p></li>
+          <li class="heuristica"><h3>#8 Estética y diseño minimalista</h3><p>Cada pantalla muestra únicamente la información necesaria. La paleta de colores sobria, la tipografía jerarquizada y los espacios en blanco generosos refuerzan una experiencia de lectura sin distracciones.</p></li>
+          <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>Se diseñaron mensajes de error claros y específicos, como el aviso de código incorrecto, indicando al usuario qué salió mal y cómo puede resolverlo.</p></li>
+          <li class="heuristica"><h3>#10 Ayuda y documentación</h3><p>Los tooltips educativos al ingresar a la vista de lectura por primera vez y el tutorial de gestos de tres pasos cubren las interacciones principales sin necesidad de que el usuario busque ayuda externa.</p></li>
+        </ul>
+      </div>
+
+      <div class="etapa__bloque etapa__bloque--ancho">
+        <h2 class="etapa__subtitulo">Pruebas de usabilidad</h2>
+
+        <!-- Colores: --c1 naranja, --c2 naranja oscuro, --c3 naranja claro -->
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 01: Registro y personalización</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico">
+              <div class="torta" style="background:var(--acento)" role="img" aria-label="Efectividad: 100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+              <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento) 0)" role="img" aria-label="Eficiencia: 60% menos de 1 minuto, 40% de 1 a 2 minutos"><span style="left:86.44px;top:53.79px">60%</span><span style="left:86.44px;top:152.82px">40%</span></div>
+              <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="Satisfacción: 80% muy fácil, 20% fácil"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
+              <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 02: Búsqueda y compra de un libro</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico">
+              <div class="torta" style="background:var(--acento)" role="img" aria-label="Efectividad: 100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+              <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(var(--acento-claro) 0 20%, var(--acento) 0 60%, var(--acento-oscuro) 0)" role="img" aria-label="Eficiencia: 40% menos de 1 minuto, 40% de 1 a 2 minutos, 20% de 2 a 3 minutos"><span style="left:39.32px;top:70.27px">40%</span><span style="left:110.42px;top:161.44px">40%</span><span class="oscuro" style="left:153.08px;top:70.27px">20%</span></div>
+              <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento) 0)" role="img" aria-label="Satisfacción: 60% muy fácil, 40% fácil"><span style="left:86.44px;top:53.79px">60%</span><span style="left:86.44px;top:152.82px">40%</span></div>
+              <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tarea">
+          <h3 class="tarea__titulo">Tarea 03: Personalización de la pantalla de lectura</h3>
+          <div class="tarea__graficos">
+            <figure class="grafico">
+              <div class="torta" style="background:var(--acento)" role="img" aria-label="Efectividad: 100% sí"><span style="left:87px;top:102.89px">100%</span></div>
+              <figcaption class="leyenda leyenda--fila"><span class="c1">Sí</span><span class="c2">No</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento) 0)" role="img" aria-label="Eficiencia: 60% menos de 1 minuto, 40% de 1 a 2 minutos"><span style="left:86.44px;top:53.79px">60%</span><span style="left:86.44px;top:152.81px">40%</span></div>
+              <figcaption class="leyenda"><span class="c1 chico">Menos de 1 min</span><span class="c2 chico">1-2 min</span><span class="c3 chico">2-3 min</span></figcaption>
+            </figure>
+            <figure class="grafico">
+              <div class="torta" style="background:conic-gradient(var(--acento-claro) 0 20%, var(--acento) 0 80%, var(--acento-oscuro) 0)" role="img" aria-label="Satisfacción: 60% muy fácil, 20% fácil, 20% tercera opción"><span style="left:86.16px;top:141.37px">60%</span><span class="oscuro" style="left:153.08px;top:58.56px">20%</span><span style="left:75.29px;top:32.62px">20%</span></div>
+              <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p class="tarea__conclusion">Los resultados del test mostraron una efectividad del 100% en las tres tareas, lo que indica que todos los usuarios lograron completar los flujos sin dificultades. La eficiencia fue buena en general, con la mayoría resolviendo cada tarea en menos de 2 minutos. En cuanto a la satisfacción, las tareas 1 y 2 fueron bien recibidas, mientras que la tarea 3 presentó mayor dificultad.</p>
+      </div>
+    </section>
+
+    <!-- ============ 05 MEJORAS ============ -->
+    <section class="etapa" id="mejoras" role="tabpanel" aria-labelledby="tab-mejoras" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>05</span><small>Mejoras realizadas</small></div>
+        <p>Se detallan los cambios implementados en el prototipo a partir de los resultados obtenidos en el análisis heurístico y los testeos de usabilidad. Las mejoras responden a problemas detectados en la interacción, con el objetivo de optimizar la navegación, facilitar la comprensión del sistema y mejorar la experiencia general.</p>
+      </div>
+
+      <!-- Los recuadros rojos usan las coordenadas del Figma (--x, --y, --w, --h) sobre cada captura -->
+      <ul class="carrusel mejoras">
+        <li class="mejora">
+          <h3>Tick de confirmación en el registro</h3>
+          <p>Se agregó un indicador visual de tick en los campos del formulario de registro para confirmar en tiempo real que los datos ingresados son válidos.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-1.png" alt="Formulario de registro antes del cambio"><i class="marca" style="--x:248.38;--y:91.12;--w:15;--h:101"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-2.png" alt="Formulario de registro con ticks de confirmación"><i class="marca" style="--x:248.52;--y:91.12;--w:14;--h:101"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Pantalla de error</h3>
+          <p>Se diseñó una pantalla de error específica para cuando el usuario ingresa un el mail o la contraseña mal.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-3.png" alt="Inicio de sesión antes del cambio"></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-4.png" alt="Inicio de sesión con pantalla de error"></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Tono</h3>
+          <p>Se actualizó la descripción del género Ficción por una más breve mejorando la consistencia con el tono del resto de las cards.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-5.png" alt="Cards de géneros antes del cambio"><i class="marca" style="--x:16.38;--y:122.12;--w:85;--h:49"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-6.png" alt="Cards de géneros con la descripción nueva"><i class="marca" style="--x:16.52;--y:122.12;--w:85;--h:49"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Información accesible</h3>
+          <p>Se sumó un texto aclaratorio debajo de las opciones de notificación indicando que estas preferencias pueden activarse o modificarse en cualquier momento desde la configuración del perfil.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-7.png" alt="Opciones de notificación antes del cambio"><i class="marca" style="--x:196.38;--y:186.12;--w:118;--h:17"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-8.png" alt="Opciones de notificación con texto aclaratorio"><i class="marca" style="--x:196.52;--y:186.12;--w:108;--h:17"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Reemplazo de información</h3>
+          <p>Se reemplazó el botón "Siguiente" de la última pantalla del onboarding por "Finalizar", indicando claramente al usuario que ese es el último paso antes de ingresar a la app.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-7.png" alt="Onboarding con el botón Siguiente"><i class="marca" style="--x:321.38;--y:257.12;--w:47;--h:20"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-8.png" alt="Onboarding con el botón Finalizar"><i class="marca" style="--x:321.52;--y:257.12;--w:47;--h:20"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Barra de progreso</h3>
+          <p>En la sección "Seguí con tu lectura" se agregó una barra de progreso para que el usuario pueda ver cuánto le falta para terminar cada libro sin necesidad de abrirlo.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-9.png" alt="Sección Seguí con tu lectura antes del cambio"><i class="marca" style="--x:95.38;--y:200.17;--w:90;--h:32"></i><i class="marca" style="--x:286.38;--y:200.17;--w:90;--h:32"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-10.png" alt="Sección Seguí con tu lectura con barras de progreso"><i class="marca" style="--x:92.59;--y:192.92;--w:90;--h:13"></i><i class="marca" style="--x:287.59;--y:192.92;--w:91;--h:13"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Botón</h3>
+          <p>Se reemplazó el botón "Obtener" por el precio real del libro ($30.000) para que el usuario sepa el costo antes de confirmar la compra, evitando sorpresas en el proceso.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-11.png" alt="Detalle del libro con el botón Obtener"><i class="marca" style="--x:234.38;--y:157.12;--w:93;--h:23"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-12.png" alt="Detalle del libro con el precio en el botón"><i class="marca" style="--x:234.52;--y:157.12;--w:93;--h:23"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Botón</h3>
+          <p>Se incorporó un botón de atrás en la pantalla de éxito para que el usuario pueda volver a explorar la app.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-13.png" alt="Pantalla de éxito sin botón de atrás"><i class="marca" style="--x:17.38;--y:39.12;--w:31;--h:14"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-14.png" alt="Pantalla de éxito con botón de atrás"><i class="marca" style="--x:17.52;--y:39.12;--w:31;--h:14"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Precio eliminado de la pantalla de éxito</h3>
+          <p>Se eliminó el monto $30.000 de la pantalla de éxito de compra para simplificar el mensaje y enfocarlo en la confirmación positiva de la acción.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-13.png" alt="Pantalla de éxito con el precio"><i class="marca" style="--x:160.38;--y:200.12;--w:37;--h:10"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-14.png" alt="Pantalla de éxito sin el precio"><i class="marca" style="--x:158.52;--y:200.12;--w:37;--h:10"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Vista de lectura</h3>
+          <p>Se sumó el indicador de página actual en la vista de lectura para que el usuario sepa en todo momento en qué punto de la historia esta.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-15.png" alt="Vista de lectura sin indicador de página"><i class="marca" style="--x:13.52;--y:44.12;--w:28.85;--h:11.64"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-16.png" alt="Vista de lectura con indicador de página"><i class="marca" style="--x:13.52;--y:44.12;--w:28.85;--h:11.64"></i></div></figure>
+          </div>
+        </li>
+        <li class="mejora">
+          <h3>Indicador</h3>
+          <p>Se agregó un círculo indicador sobre la zona central de la pantalla en el tooltip de lectura, señalando de forma clara y concreta el área que el usuario debe tocar para acceder al menú.</p>
+          <div class="comparacion">
+            <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/tinta/mejora-17.png" alt="Tooltip de lectura antes del cambio"><i class="marca" style="--x:144.4;--y:139.6;--w:96;--h:46"></i></div></figure>
+            <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/tinta/mejora-18.png" alt="Tooltip de lectura con círculo indicador"><i class="marca" style="--x:141.5;--y:101.6;--w:97;--h:84"></i></div></figure>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 06 UI KIT ============ -->
+    <section class="etapa" id="uikit" role="tabpanel" aria-labelledby="tab-uikit" hidden>
+      <div class="etapa__intro">
+        <div class="etapa__numero"><span>06</span><small>UI Kit</small></div>
+        <p>El UI Kit define los elementos visuales y de interacción de la app para mantener claridad y consistencia en la experiencia. Incluye paleta cromática, tipografías, íconos, botones, inputs, cards, gamificación y personaje.</p>
+      </div>
+      <img src="assets/tinta/ui-kit.png" alt="UI Kit de Tinta: paleta cromática, estilos tipográficos, botones, etiquetas, switches y componentes" class="uikit" loading="lazy">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="pie">
+    <div class="pie__fila">
+      <span>© 2026 Pilar Marino. Todos los derechos reservados.</span>
+      <span>Buenos Aires, Argentina</span>
+    </div>
+  </footer>
+
+  <button class="accesibilidad" type="button" aria-label="Opciones de accesibilidad">
+    <span class="bleed" style="inset:-20%"><img src="assets/icon-a11y.svg" alt=""></span>
+  </button>
+
+  <script src="js/main.js?v=3"></script>
+  <script src="js/detalle.js?v=5"></script>
+</body>
+</html>

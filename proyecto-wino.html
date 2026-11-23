@@ -155,14 +155,14 @@
         <h2 class="etapa__subtitulo">Análisis heurístico</h2>
         <ul class="carrusel heuristicas">
           <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>El mapa del salón muestra en todo momento el estado de cada mesa mediante colores diferenciados, y el panel lateral actualiza el resumen del pedido en tiempo real, manteniéndolo informado sobre lo que está sucediendo sin necesidad de navegar.</p></li>
-          <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>La interfaz utiliza terminología propia del rubro gastronómico como, "comanda" y "cuenta", y representa el salón visualmente tal como se vería desde la barra, facilitando una lectura inmediata del entorno.</p></li>
-          <li class="heuristica"><h3># 3 Control y libertad del usuario</h3><p>El encargado puede modificar o eliminar ítems del pedido antes de confirmar, y cada pantalla cuenta con un botón de cancelar o volver claramente visible, permitiéndole salir de cualquier estado sin consecuencias.</p></li>
+          <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>La interfaz utiliza terminología propia del rubro gastronómico como "comanda" y "cuenta", y representa el salón visualmente tal como se vería desde la barra, facilitando una lectura inmediata del entorno.</p></li>
+          <li class="heuristica"><h3>#3 Control y libertad del usuario</h3><p>El encargado puede modificar o eliminar ítems del pedido antes de confirmar, y cada pantalla cuenta con un botón de cancelar o volver claramente visible, permitiéndole salir de cualquier estado sin consecuencias.</p></li>
           <li class="heuristica"><h3>#4 Consistencia y estándares</h3><p>Los colores, la ubicación de los botones y la barra superior se mantienen iguales en todas las pantallas, de modo que no necesitan reaprender la lógica del sistema cada vez que cambia de vista.</p></li>
           <li class="heuristica"><h3>#5 Prevención de errores</h3><p>Las mesas ocupadas se diferencian visualmente de las libres para evitar abrirlas por error, y el sistema calcula automáticamente el monto restante en el pago dividido, reduciendo los errores de cálculo manual.</p></li>
           <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>Los productos se muestran con imagen y nombre, el resumen del pedido permanece visible mientras se seleccionan ítems, y el mapa muestra el estado del salón completo de un vistazo, sin exigirle al usuario que memorice nada.</p></li>
           <li class="heuristica"><h3>#7 Flexibilidad y eficiencia de uso</h3><p>Las acciones más frecuentes como agregar un producto o abrir una mesa requieren un solo toque, y funciones como juntar mesas o dividir la cuenta están disponibles directamente en el flujo principal sin pasos adicionales.</p></li>
           <li class="heuristica"><h3>#8 Estética y diseño minimalista</h3><p>Cada pantalla muestra únicamente la información necesaria para la tarea en curso, con una paleta reducida donde cada color cumple una función específica y sin elementos decorativos que compitan con la operación.</p></li>
-          <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>El flujo es lo suficientemente intuitivo para operar sin documentación y en momentos críticos como el pago por QR, el sistema muestra los pasos del proceso en lenguaje claro para que sepa en qué punto está.</p></li>
+          <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>Se diseñaron pantallas de error específicas, como la de PIN incorrecto o la de número inválido de comensales, que indican en lenguaje claro qué salió mal y cómo resolverlo. En momentos críticos como el pago por QR, el sistema muestra los pasos del proceso para que el encargado sepa en qué punto está.</p></li>
           <li class="heuristica"><h3>#10 Ayuda y documentación</h3><p>El flujo general de la app es lo suficientemente intuitivo como para que un usuario entrenado pueda operar sin documentación.</p></li>
         </ul>
       </div>
@@ -191,7 +191,7 @@
               <p class="grafico__pregunta">¿Qué tan sencillo te resultó realizar la unificación de mesas dentro del sistema?</p>
               <div class="grafico__fila">
                 <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="80% muy fácil, 20% fácil"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
-                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">Intermedia</span></figcaption>
               </div>
             </figure>
           </div>
@@ -218,7 +218,7 @@
               <p class="grafico__pregunta">¿Qué tan clara y cómoda te resultó la gestión del pedido dentro del sistema?</p>
               <div class="grafico__fila">
                 <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento) 0)" role="img" aria-label="60% muy fácil, 40% fácil"><span style="left:86.44px;top:53.79px">60%</span><span style="left:86.44px;top:152.82px">40%</span></div>
-                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">Intermedia</span></figcaption>
               </div>
             </figure>
           </div>
@@ -245,7 +245,7 @@
               <p class="grafico__pregunta">¿Qué tan sencillo y comprensible te resultó gestionar los pagos y cerrar la cuenta en el sistema?</p>
               <div class="grafico__fila">
                 <div class="torta" style="background:conic-gradient(from 90deg, var(--acento-oscuro) 0 40%, var(--acento-claro) 0 60%, var(--acento) 0)" role="img" aria-label="40%, 40% y 20%"><span style="left:91.93px;top:47.2px">40%</span><span style="left:91.93px;top:160.9px">40%</span><span class="oscuro" style="left:22.15px;top:95.36px">20%</span></div>
-                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">Intermedia</span></figcaption>
               </div>
             </figure>
           </div>
@@ -257,7 +257,7 @@
       <div class="etapa__bloque etapa__bloque--ancho">
         <h2 class="etapa__subtitulo">Leyes UX</h2>
         <ul class="leyes">
-          <li class="ley"><h3>Ley de Hick</h3><p>El mapa de mesas organiza visualmente las mesas por color y estado, reduciendo el tiempo de búsqueda: el encargado tiene que leer texto, sino identificar el color de la mesa que necesita.</p><p>La selección de productos está dividida por categorías (comidas, vinos por copa), de modo que el encargado nunca ve toda la carta al mismo tiempo sino una sección a la vez.</p></li>
+          <li class="ley"><h3>Ley de Hick</h3><p>El mapa de mesas organiza visualmente las mesas por color y estado, reduciendo el tiempo de búsqueda: el encargado no tiene que leer texto, sino identificar el color de la mesa que necesita.</p><p>La selección de productos está dividida por categorías (comidas, vinos por copa), de modo que el encargado nunca ve toda la carta al mismo tiempo sino una sección a la vez.</p></li>
           <li class="ley"><h3>Ley de Fitts</h3><p>Las tarjetas de producto en la selección de comidas y vinos son grandes, con imagen y nombre visible, aptas para uso táctil sin riesgo de error de toque.</p><p>El botón de acción principal está siempre ubicado en la parte inferior derecha del panel, zona de fácil acceso con la mano derecha en una tablet horizontal.</p><p>El teclado numérico para ingresar el número de comensales usa teclas grandes con buena separación entre ellas, reduciendo errores de toque.</p></li>
           <li class="ley"><h3>Ley de Jakob</h3><p>El layout de resumen del pedido + productos sigue el patrón de los sistemas POS más conocidos del mercado, lo que hace que un operador con experiencia previa en sistemas similares se adapte rápidamente.</p><p>El teclado numérico para ingresar cantidad de comensales sigue el patrón de teclado telefónico, universal y sin necesidad de aprendizaje.</p><p>El flujo de pago con pantalla de confirmación replica el patrón de apps de pago como MercadoPago.</p></li>
           <li class="ley"><h3>Ley de Miller</h3><p>El mapa del salón organiza las mesas en grupos visuales por zona, evitando que tengan que procesar las 15 mesas como una lista lineal.</p><p>El resumen del pedido en el panel lateral muestra los ítems ya seleccionados de forma persistente, evitando que el encargado tenga que memorizar lo que ya cargó mientras sigue seleccionando productos.</p></li>
@@ -276,7 +276,7 @@
       <ul class="carrusel mejoras mejoras--tablet">
         <li class="mejora">
           <h3>Teclado numérico del PIN</h3>
-          <p>Se cambio el teclado numérico para ingresar el número de pin ya que contenía íconos cuya función puede no ser obvia y ademas no tenia una consistencia el teclado numérico ya que era diferente al de el número de comensales.</p>
+          <p>Se cambió el teclado numérico para ingresar el PIN, ya que contenía íconos cuya función podía no ser obvia y, además, no era consistente con el teclado del número de comensales.</p>
           <div class="comparacion">
             <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m2.jpg" alt="Teclado del PIN antes del cambio"><i class="marca" style="--x:194.07;--y:173.89;--w:37.56;--h:29.21"></i></div></figure>
             <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m3.jpg" alt="Teclado del PIN unificado"><i class="marca" style="--x:131.12;--y:173.89;--w:98.77;--h:29.91"></i></div></figure>
@@ -284,7 +284,7 @@
         </li>
         <li class="mejora">
           <h3>Pantalla de error del PIN</h3>
-          <p>Se diseñó una pantalla de error específica para cuando el usuario ingresa un el mail o la contraseña mal.</p>
+          <p>Se diseñó una pantalla de error específica para cuando el usuario ingresa un PIN incorrecto.</p>
           <div class="comparacion">
             <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/wino/m2.jpg" alt="Ingreso del PIN sin pantalla de error"></div></figure>
             <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/wino/m5.jpg" alt="Pantalla de error del PIN"></div></figure>

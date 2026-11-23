@@ -43,7 +43,7 @@
           <ul class="detalle__tags">
             <li class="tag">Streaming</li>
             <li class="tag">Televisión</li>
-            <li class="tag">Joystick</li>
+            <li class="tag">Control remoto</li>
           </ul>
         </div>
       </section>
@@ -102,7 +102,7 @@
         <li class="tarjeta"><h3>El estado de foco</h3><p>Diseñar un estado de foco fuerte y consistente para todos los componentes interactivos.</p></li>
         <li class="tarjeta"><h3>Consistencia en el formato de miniaturas</h3><p>Definir un solo formato de miniatura y mantenerlo consistente en toda la interfaz es fundamental, teniendo en cuenta algunos cambios de formato en carruseles.</p></li>
         <li class="tarjeta"><h3>El vocabulario debe ser familiar y estándar</h3><p>Usar vocabulario estandarizado en todos los elementos de navegación y acción. Evitar nombres creativos o ambiguos en los menús principales. Priorizar la claridad por sobre la originalidad, especialmente en los CTAs.</p></li>
-        <li class="tarjeta"><h3>Navegación lateral</h3><p>Usar un menú lateral que en su estado colapsado muestre al menos los íconos de cada sección, sin texto. Al expandirse con el direccional izquierdo, se despliega íconos + etiquetas.</p></li>
+        <li class="tarjeta"><h3>Navegación lateral</h3><p>Usar un menú lateral que en su estado colapsado muestre al menos los íconos de cada sección, sin texto. Al expandirse con el direccional izquierdo, se despliegan íconos + etiquetas.</p></li>
       </ul>
     </section>
 
@@ -155,12 +155,12 @@
       <div class="etapa__bloque etapa__bloque--ancho">
         <h2 class="etapa__subtitulo">Análisis heurístico</h2>
         <ul class="carrusel heuristicas">
-          <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>La interfaz mantiene al usuario informada en todo momento: la barra de progreso en el reproductor indica el tiempo transcurrido y restante, y el panel de configuración muestra el idioma y tamaño de subtítulos activos de forma visible.</p></li>
+          <li class="heuristica"><h3>#1 Visibilidad del estado del sistema</h3><p>La interfaz mantiene al usuario informado en todo momento: la barra de progreso en el reproductor indica el tiempo transcurrido y restante, y el panel de configuración muestra el idioma y tamaño de subtítulos activos de forma visible.</p></li>
           <li class="heuristica"><h3>#2 Correspondencia entre el sistema y el mundo real.</h3><p>Atlas usa un lenguaje cercano y familiar: "¿Quién está viendo?", categorías geográficas como Europa o Japón, y listas con nombres propios creados por el usuario. Todo el vocabulario refleja cómo las personas hablan de los viajes en su vida cotidiana.</p></li>
-          <li class="heuristica"><h3># 3 Control y libertad del usuario</h3><p>Cada pantalla secundaria incluye un botón "Atrás" en la esquina superior izquierda, y todos los modales tienen una opción de Cancelar visible, permitiendo al usuario salir de cualquier acción sin consecuencias.</p></li>
+          <li class="heuristica"><h3>#3 Control y libertad del usuario</h3><p>Cada pantalla secundaria incluye un botón "Atrás" en la esquina superior izquierda, y todos los modales tienen una opción de Cancelar visible, permitiendo al usuario salir de cualquier acción sin consecuencias.</p></li>
           <li class="heuristica"><h3>#4 Consistencia y estándares</h3><p>La interfaz respeta las convenciones del mercado de streaming: carruseles horizontales, hero banner, avatares de perfil circulares y reproductor full-screen con controles auto-hide, siguiendo el modelo mental que los usuarios ya tienen de plataformas como Netflix o Prime Video.</p></li>
           <li class="heuristica"><h3>#5 Prevención de errores</h3><p>Se agregaron medidas preventivas en los flujos más sensibles: validación en tiempo real en el campo de mail, campo de nombre marcado como obligatorio en la creación de perfil, y descripciones de cada clasificación de contenido para que el usuario elija con información antes de confirmar.</p></li>
-          <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>as categorías siempre tienen su etiqueta visible sobre el carrusel, la vista de detalle reúne toda la información del contenido en una sola pantalla, y el buscador ofrece sugerencias de destinos para que el usuario reconozca sin tener que recordar.</p></li>
+          <li class="heuristica"><h3>#6 Reconocimiento antes que recuerdo</h3><p>Las categorías siempre tienen su etiqueta visible sobre el carrusel, la vista de detalle reúne toda la información del contenido en una sola pantalla, y el buscador ofrece sugerencias de destinos para que el usuario reconozca sin tener que recordar.</p></li>
           <li class="heuristica"><h3>#7 Flexibilidad y eficiencia de uso</h3><p>El botón "Reproducir" tiene el foco por defecto al entrar al detalle del contenido, permitiendo iniciar la reproducción en un solo click. La opción de guardar en lista está disponible directamente desde esa misma pantalla, sin necesidad de salir.</p></li>
           <li class="heuristica"><h3>#8 Estética y diseño minimalista</h3><p>La apertura de la app es solo logo sobre fondo oscuro. El reproductor en reposo muestra únicamente el video, sin elementos que distraigan. Los modales son compactos y con la información mínima necesaria para completar la acción.</p></li>
           <li class="heuristica"><h3>#9 Ayuda a reconocer y recuperarse de errores</h3><p>Se diseñaron mensajes de error claros y específicos: el aviso de mail inválido indica exactamente qué salió mal y cómo resolverlo, y el modal de confirmación antes de eliminar del historial permite al usuario cancelar si actuó por error.</p></li>
@@ -192,7 +192,7 @@
               <p class="grafico__pregunta">¿Qué tan cómodo te resultó navegar el catálogo y llegar a reproducir contenido usando el control remoto?</p>
               <div class="grafico__fila">
                 <div class="torta" style="background:conic-gradient(var(--acento-oscuro) 0 20%, var(--acento) 0)" role="img" aria-label="80% muy fácil, 20% fácil"><span style="left:60.23px;top:149.73px">80%</span><span style="left:150.57px;top:60.23px">20%</span></div>
-                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">2-3 min</span></figcaption>
+                <figcaption class="leyenda"><span class="c1">Muy fácil</span><span class="c2">Fácil</span><span class="c3">Intermedia</span></figcaption>
               </div>
             </figure>
           </div>
@@ -279,7 +279,7 @@
           </div>
         </div>
 
-        <p class="tarea__conclusion">Los resultados del test mostraron una efectividad del 100% en las cuatro tareas, ya que todos los usuarios lograron completarlas correctamente. En cuanto a la eficiencia, la mayoría resolvió cada tarea entre 1-2 minutos. Respecto a la satisfacción, las tareas 1 y 4 fueron las mejor valoradas, mientras que la tarea 2 y 3 presentó un poco más de dificultad.</p>
+        <p class="tarea__conclusion">Los resultados del test mostraron una efectividad del 100% en las cuatro tareas, ya que todos los usuarios lograron completarlas correctamente. En cuanto a la eficiencia, la mayoría resolvió cada tarea entre 1-2 minutos. Respecto a la satisfacción, las tareas 1 y 4 fueron las mejor valoradas, mientras que las tareas 2 y 3 presentaron un poco más de dificultad.</p>
       </div>
 
       <div class="etapa__bloque etapa__bloque--ancho">
@@ -312,7 +312,7 @@
         </li>
         <li class="mejora">
           <h3>Lenguaje</h3>
-          <p>El campo dice "Agregá los mails de los colaboradores". El término "colaboradores" es más propio de herramientas de trabajo. Agregá a tus amigos", un lenguaje más cercano y acorde al contexto.</p>
+          <p>El campo dice "Agregá los mails de los colaboradores". El término "colaboradores" es más propio de herramientas de trabajo. Lo reemplazamos por "Agregá a tus amigos", un lenguaje más cercano y acorde al contexto.</p>
           <div class="comparacion">
             <figure><figcaption>Antes</figcaption><div class="captura"><img src="assets/atlas/mejora-3.jpg" alt="Lista compartida con el texto colaboradores"><i class="marca" style="--x:200.26;--y:179.45;--w:38.76;--h:30.15"></i></div></figure>
             <figure><figcaption>Después</figcaption><div class="captura"><img src="assets/atlas/mejora-4.jpg" alt="Lista compartida con el texto amigos"></div></figure>
@@ -356,7 +356,7 @@
     <!-- ============ 06 DESIGN SYSTEM ============ -->
     <section class="etapa" id="design-system" role="tabpanel" aria-labelledby="tab-design-system" hidden>
       <div class="etapa__intro">
-        <div class="etapa__numero"><span>06</span><small>UI Kit</small></div>
+        <div class="etapa__numero"><span>06</span><small>Design System</small></div>
         <p>El Design System de Atlas reúne las Foundations, los componentes, las plantillas y las guías de uso de la interfaz, para mantener una experiencia consistente y pensada para la navegación con control remoto en pantallas de TV.</p>
       </div>
 
